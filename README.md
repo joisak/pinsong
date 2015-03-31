@@ -1,2 +1,2 @@
 # pinsong
-Pin you song at any place!
+Pin your song at any place!
