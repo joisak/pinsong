@@ -25,14 +25,14 @@ function drawMap(latitude, longitude) {
     map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
     
     // "Du är här!" markörens HTML innehåll.
-    var markerContent = '<div><h2>You are here!</h2><p>Lorem ipsum dolor sit amet,<br/>consectetur adipiscing elit.<br/>Aliquam vitae arcu enim.<br/>Sed interdum vel<br/>ex eu tristique.<br/><br/><input type="button" value="Check in song"/></p><img src="img/user/jocke.jpg"></div>';
+    var markerContent = '<div class="here"><h2>You are here!</h2><p>Lorem ipsum dolor sit amet,<br/>consectetur adipiscing elit.<br/>Aliquam vitae arcu enim.<br/>Sed interdum vel<br/>ex eu tristique.<br/><br/><input type="button" value="Check in song"/></p><img src="img/user/jocke.jpg"></div>';
     
     // Placera ut "Du är här" markören!
     placeMarker(latitude, longitude, markerContent, true); 
 
 
         // "Exemepel incheckningar, detta ska ju hämtas från databas
-        var checkinContent = '<div><h3>Dennis checked in Avicii - The Days</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br/>Aliquam vitae arcu enim. Sed interdum vel ex eu tristique. Integer ut consequat ante.</p><iframe src="https://embed.spotify.com/?uri=spotify%3Atrack%3A4th1RQAelzqgY7wL53UGQt" width="300" height="80" frameborder="0" allowtransparency="true"></iframe></div>';
+        var checkinContent = '<div><h3>Dennis checked in Avicii - The Days</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br/>Aliquam vitae arcu enim. Sed interdum vel ex eu tristique. Integer ut consequat ante.</p><iframe src="https://embed.spotify.com/?uri=spotify%3Atrack%3A4th1RQAelzqgY7wL53UGQt" width="450" height="80" frameborder="0" allowtransparency="true"></iframe></div>';
 
         // Placera ut exempel markören!
         placeMarker(57.718982, 11.947221, checkinContent, false);     
